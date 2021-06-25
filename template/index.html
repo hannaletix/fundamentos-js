@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fundamentos de JS">
+  <title>Document</title>
+  <link rel="stylesheet" href="/template/style.css">
+</head>
+
+<body onload="init()">
+  
+  <div class="bill">
+    <h1>Comanda</h1>
+    <table class="bill__items">
+      <thead>
+        <tr>
+          <th>Prato</th>
+          <th>Preço</th>
+        </tr>
+      </thead>
+      <tbody id="items">
+
+      </tbody>
+    </table>
+
+    <table class="bill__total">
+      <tbody>
+        <tr>
+          <td><strong>Total</strong></td>
+          <td id="total">R$ 0,00</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="new-item">
+    <h2>Adicionar item à conta</h2>
+    <label>
+      Nome
+      <input type="text" />
+    </label>
+    <label>
+      Preço
+      <input type="number" />
+    </label>
+    <button>Adicionar</button>
+    <button onclick="printBill()">Imprimir</button>
+  </div>
+
+  <script type="text/javascript" src="/template/index.js"></script>
+</body>
+
+</html>
