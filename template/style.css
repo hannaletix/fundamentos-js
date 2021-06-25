@@ -94,8 +94,10 @@ td {
 }
 
 .new-item p {
-  margin: 0;
-  margin-bottom: 8px;
+  margin: 8px 0 0 0;
+  font-weight: bold;
+  color: red;
+  display: none;
 }
 
 .new-item label {
@@ -106,6 +108,7 @@ td {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 8px;
 }
 
 .new-item input {

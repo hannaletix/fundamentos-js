@@ -30,7 +30,7 @@
       <tbody>
         <tr>
           <td><strong>Total</strong></td>
-          <td id="total">R$ 0,00</td>
+          <td id="total"></td>
         </tr>
       </tbody>
     </table>
@@ -40,13 +40,14 @@
     <h2>Adicionar item à conta</h2>
     <label>
       Nome
-      <input type="text" />
+      <input type="text" id="newName" />
     </label>
     <label>
       Preço
-      <input type="number" />
+      <input type="number" id="newPrice"/>
     </label>
-    <button>Adicionar</button>
+    <p id="invalid">Campos vazios</p>
+    <button onclick="submitAdd()">Adicionar</button>
     <button onclick="printBill()">Imprimir</button>
   </div>
 
